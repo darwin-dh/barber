@@ -1,0 +1,164 @@
+/**Estilos generales**/
+.carousel-inner{
+    width: 200px!important;
+
+}
+
+/*****/
+
+@font-face {
+    font-family: regular;
+    src: url('fonts/static/OpenSans/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: open-bold;
+    src: url('fonts/static/OpenSans/OpenSans-Bold.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e74c3c, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #313132, #161618);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-sizing: border-box;   
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: regular;
+    color: #fff!important;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+    max-width: 1330px;
+}
+header {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+align-items: center;
+padding: 2rem;
+
+}
+
+a[href]{
+    text-decoration: none;
+    color: #fff;
+    display:inline-block;
+}
+header .log{
+    font-size: 2rem;
+    font-family: open-bold;
+    width: 60%;
+}
+.log span{
+ color:#EFC862;
+}
+header nav{
+    width: 40%;
+}
+
+header nav a {
+    margin-left: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    position: relative;
+
+}
+header nav a:hover {
+    color: #EFC862;
+}
+.content{
+    display: flex;
+    background: red;
+    flex-wrap: wrap;
+    flex-direction: row;
+   background: url('../img/3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: flex-end;
+    align-items: center;
+    height: 700px;
+
+}
+
+/*  .content .imagen {
+    width: 80%;
+    margin: auto;
+}
+.content .imagen > img{
+    width: 100%;
+    margin: auto;
+    height: 500px;
+}  */
+.content .text{
+  
+   width: 500px;
+ 
+
+
+} 
+.text > h1{
+    font-size: 4rem;
+    font-family: open-bold;
+}
+.text > p{
+    margin-top: 20px;
+    line-height: 36px;
+}
+/***********FOOTER*************/
+footer{
+    /* background:linear-gradient(to right, rgb(1 0 6 /50%),rgb(1 0 6 /75%)); */
+    background: rgba(0, 0, 0, 0.26);
+    display: flex!important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+footer > section{
+    padding: 20px 20px;
+}
+footer .redes{
+    display:flex ;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    font-size: 30px;
+
+}
+.redes > i{
+    margin: 10px;
+
+}
+/***=============================================*/
+ @media screen and (max-width: 575px) {
+     header .log{
+         width: 100%;
+        text-align: center;
+     }
+    header nav{
+        width: 100%;
+    }
+    
+    .content .imagen {
+        width: 100%;
+        margin: auto;
+    }
+    .content .text{
+        width: 100%;
+    }
+    footer .redes{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer > section{
+        width: 100%;
+       text-align: center;
+    }
+     }
