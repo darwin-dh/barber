@@ -6644,7 +6644,7 @@ readers do not read off random characters that represent icons */
 
 .fa-zhihu:before {
   content: "\f63f"; }
-@font-face {
+/* @font-face {
   font-family: 'Font Awesome 6 Free';
   font-style: normal;
   font-weight: 400;
@@ -6666,3 +6666,4 @@ readers do not read off random characters that represent icons */
 .fa-solid {
   font-family: 'Font Awesome 6 Free';
   font-weight: 900; }
+ */
